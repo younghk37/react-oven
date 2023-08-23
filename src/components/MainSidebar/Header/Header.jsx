@@ -25,7 +25,6 @@ function Header() {
                     <input css={S.SSearchInput} type="search" />
                 </div>
             )}
-            
         </div>
     );
 }

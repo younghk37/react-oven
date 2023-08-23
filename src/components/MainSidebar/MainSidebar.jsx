@@ -75,7 +75,6 @@ function MainSidebar(props) {
                     <List title={"LISTS"} list={mainMenuListArray.lists}/>
                 </>
             )}
-
         </div>
     );
 }

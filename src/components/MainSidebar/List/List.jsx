@@ -21,15 +21,14 @@ function List({ title, list }) {
                 {list.map(item => {
                     const isSelected = pathName.startsWith(item.path);
                     return (
-                    <li css={S.SListBox(isSelected)} key={item.id} onClick={() => {
-                        handleLinkClick(item.path);
-                    }}>
-                        <HiCalendar />
-                        <span css={S.SListName(isSelected)}>{item.name}</span>
-                        {!!item.count && (<div css={S.SCount(isSelected)}>{item.count}</div>)}
-                    </li>
-                    )
-                })}
+                        <li css={S.SListBox(isSelected)} key={item.id} onClick={() => {
+                            handleLinkClick(item.path);}} >
+                            <HiCalendar />
+                            <span css={S.SListName(isSelected)}>{item.name}</span>
+                            {!!item.count && (<div css={S.SCount(isSelected)}>{item.count}</div>)}
+                        </li>
+                    )})
+                }
             </ul>
         </div>
     );

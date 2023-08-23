@@ -1,6 +1,5 @@
 import { css } from "@emotion/react";
 
-
 export const SLayout = css`
     border-bottom: 1px solid #dbdbdb;
     padding: 20px 5px;
@@ -19,15 +18,15 @@ export const SListContainer = css`
 
 export const SListBox = (isSelected) => {
     return css`
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    ${isSelected && "background-color: #eaeaea; "}
-    /* background-color: ${isSelected ? "#dbdbdb" : "transparent"}; */
-    cursor: pointer;
-`;
-}
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        ${isSelected && "background-color: #eaeaea; "}
+        /* background-color: ${isSelected ? "#dbdbdb" : "transparent"}; */
+        cursor: pointer;
+    `;
+};
 
 export const SListName = (isSelected) => css`
     display: inline-block;
